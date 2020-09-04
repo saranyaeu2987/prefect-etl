@@ -1,0 +1,20 @@
+projectName: store
+envVars:
+  ENV: STG
+  LOG_LEVEL: DEBUG
+  DELIMITER: ","
+  AWS_REGION: us-east-1
+  S3_RAW_PREFIX:
+  S3_DELTA_LAKE_PREFIX:
+  S3_DELIM_PREFIX:
+  S3_BUCKET_INGEST:
+  S3_BUCKET_OUTPUT:
+  S3_BUCKET_DL:
+  S3_SOURCE_FORMAT:
+  PREFECT_CLOUD_TOKEN:
+  DOCKER_CLI_EXPERIMENTAL:
+  PREFECT_LABELS:
+image:
+  name:
+  tag: latest
+pod_role: 

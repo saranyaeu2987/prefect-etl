@@ -1,0 +1,13 @@
+store-build-job:
+    extends:
+        - .build-publish-prefect
+    variables:
+        IMAGE_NAME: store
+        DOCKER_PATH: ./workflows/store/awsprefect
+        FLOW_PATH: ./workflows/store/awsprefect
+        PIP_REQUIREMENTS_PATH: ./app/requirements.txt
+        ENV: LOCAL
+        JOB_NAME: store
+        PREFECT_CLOUD_TOKEN: "secret"
+        DOCKER_CLI_EXPERIMENTAL: enabled
+        PREFECT_LABELS: "stg,k8s-agent,standard-k8s-job"
